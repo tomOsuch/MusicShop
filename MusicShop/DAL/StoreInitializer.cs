@@ -1,21 +1,17 @@
-﻿using MusicShop.Models;
+﻿using MusicShop.Migrations;
+using MusicShop.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 
+
 namespace MusicShop.DAL
 {
-    public class StoreInitializer : DropCreateDatabaseAlways<StoreContext>
+    public class StoreInitializer : MigrateDatabaseToLatestVersion<StoreContext, Configuration>
     {
-        protected override void Seed(StoreContext context)
-        {
-            SeadStoreData(context);
 
-            base.Seed(context);
-        }
-
-        private void SeadStoreData(StoreContext context)
+        public static void SeadStoreData(StoreContext context)
         {
             var genres = new List<Genre>
             {

@@ -21,7 +21,6 @@ namespace MusicShop.Controllers
         public ActionResult Index()
         {
             var genreList = db.Genres.ToList();
-
             return View();
         }
     }

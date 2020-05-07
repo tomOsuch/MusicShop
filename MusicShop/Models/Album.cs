@@ -19,7 +19,9 @@ namespace MusicShop.Models
         public DateTime DateAdded { get; set; }
         public string CoverFileName { get; set; }
         public string Description { get; set; }
+        public string ShortDescription { get; set; }
         public decimal Price { get; set; }
+        public bool IsNewArrivals { get; set; }
         public bool IsBestseller { get; set; }
         public bool IsHidden { get; set; }
         public virtual Genre Genre { get; set; }
