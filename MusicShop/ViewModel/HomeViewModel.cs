@@ -9,7 +9,7 @@ namespace MusicShop.ViewModel
     public class HomeViewModel
     {
         public IEnumerable<Album> Bestsellers { get; set; }
-        public IEnumerable<Album> NewArivals { get; set; }
+        public IEnumerable<Album> NewArrivals { get; set; }
         public IEnumerable<Genre> Genres { get; set; }
 
     }

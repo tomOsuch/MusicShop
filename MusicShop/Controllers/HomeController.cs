@@ -31,7 +31,7 @@ namespace MusicShop.Controllers
             {
                 Bestsellers = bestsellers,
                 Genres = genres,
-                NewArivals = newArrivals
+                NewArrivals = newArrivals
             };
             
             return View(vm);
