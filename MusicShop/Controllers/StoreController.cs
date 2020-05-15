@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicShop.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace MusicShop.Controllers
 {
     public class StoreController : Controller
     {
+        StoreContext db = new StoreContext();
         // GET: Store
 
         public ActionResult Details(int id)
@@ -17,12 +19,22 @@ namespace MusicShop.Controllers
 
         public ActionResult List(string genrename)
         {
-            return View();
+            var genre = db.Genres.Include("Albums").Where(g => g.Name.ToUpper() == genrename.ToUpper()).Single();
+            var albums = genre.Albums.ToList();
+
+            return View(albums);
         }
 
         public ActionResult Index()
         {
             return View();
+        }
+        [ChildActionOnly]
+        public ActionResult GenresMenu()
+        {
+            var genres = db.Genres.ToList();
+
+            return PartialView("_GenresMenu", genres);
         }
     }
 }

@@ -161,6 +161,7 @@
     <Content Include="Global.asax" />
     <Content Include="Prototype\Main.html" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Prototype\ProductList.html" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery.mobile-1.1.0.js" />
@@ -208,6 +209,9 @@
     <Content Include="Views\Shared\_ViewSwitcher.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
     <Content Include="Views\Home\index.mobile.cshtml" />
+    <Content Include="Views\Store\_GenresMenu.cshtml" />
+    <Content Include="Views\Store\List.cshtml" />
+    <Content Include="Views\Store\_ProductList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -217,7 +221,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Store\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202005062347283_InitialCreate.resx">

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<MusicShop.Models.Album>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_StoreLayout.cshtml";
+}
+
+<div id="productlist-content">
+    @Html.Action("GenresMenu")
+
+    <div id="productlist-rightsection">
+        <div id="breadcrumb-section">
+            <img src="../Content/Images/home-small.png" />
+            <a href="nav">
+                Start > Hip Hop
+            </a>
+        </div>
+        @Html.Partial("_ProductList")
+    </div>
+
+
+</div>
+
