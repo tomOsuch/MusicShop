@@ -161,6 +161,7 @@
     <Content Include="Global.asax" />
     <Content Include="Prototype\Main.html" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Prototype\Product-details.html" />
     <Content Include="Prototype\ProductList.html" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
@@ -212,6 +213,7 @@
     <Content Include="Views\Store\_GenresMenu.cshtml" />
     <Content Include="Views\Store\List.cshtml" />
     <Content Include="Views\Store\_ProductList.cshtml" />
+    <Content Include="Views\Store\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
